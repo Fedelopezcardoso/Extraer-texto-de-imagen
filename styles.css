@@ -1,0 +1,45 @@
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(51, 65, 85, 0.8);
+    border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(71, 85, 105, 1);
+}
+
+/* Drag and Drop Active Highlight */
+#dropzone.drag-active {
+    border-color: #3b82f6 !important;
+    background-color: rgba(37, 99, 235, 0.1) !important;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.15);
+}
+
+/* Kbd key styling */
+kbd {
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Pulsing effect for paste indicator */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(59, 130, 246, 0);
+    }
+}
+
+.pulse-active {
+    animation: pulse-glow 2s infinite;
+}
